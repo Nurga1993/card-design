@@ -1,0 +1,115 @@
+:root{
+    --bgcolor:#f4f7fd;
+    --shadow:0px 10px 30px rgba(209,213,223,.5);
+    --primary:#008dff;
+    --radius-10:10px;
+    --radius-20:20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgcolor);
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background: white;
+    box-shadow: var(--shadow);
+    position: relative;
+    top: 100px;
+    border-radius: var(--radius-20);
+    text-align: center;
+    padding: 20px;
+}
+
+.card::after{
+    content: "chegirma";
+    position: absolute;
+    background: orange;
+    text-transform: uppercase;
+    color: white;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.icon{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    flex-direction: column;
+}
+
+.fa-cart-shopping{
+    background: var(--primary);
+    padding: 8px;
+    color: white;
+    border-radius: var(--radius-10);
+    margin-bottom:10px;
+}
+
+.fa-heart{
+    color: rgb(246, 134, 134);
+    font-size: 22px;
+    
+}
+
+.card img {
+    width: 220px;
+}
+
+.card h3{
+    margin: 15px;
+}
+
+.card s {
+    font-size: 16px;
+    color: rgb(244, 151, 151);
+}
+
+.star {
+    margin: 20px;
+}
+
+
+
+.star .fa-star{
+    color: var(--primary);
+}
+
+.star span {
+    margin-left:10px;
+    color: #9a9c9c;
+}
+
+.star span .fa-message{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    font-size: 20px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: var(--radius-10);
+    box-shadow: var(--shadow);
+}
+
+
